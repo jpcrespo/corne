@@ -7,7 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/backlight.h>
+#include <dt-bindings/zmk/rgb.h>
 
 &led_strip {
     chain-length = <27>;
@@ -54,7 +54,7 @@
                     bindings = <
     &kp  TILDE  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &kp BSPC
     &kp C_VOL_UP   &kp C_VOL_DN &kp C_PP &kp C_NEXT &kp C_PREV &trans &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH &kp GRAVE
-    &bl BL_TOG &bl BL_INC  &bl BL_DEC &bl BL_CYCLE   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &kp TILDE
+    &rgb_ug  RGB_TOG &rgb_ug  RGB_SPI  &rgb_ug  RGB_SPD &rgb_ug  RGB_EFF   &rgb_ug RGB_EFR   &rgb_ug RGB_COLOR_HSB(128,100,100)      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &kp TILDE
                           &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
                 };
