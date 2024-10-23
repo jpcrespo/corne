@@ -47,7 +47,7 @@
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// | ~ | ! | @ | # | $ | % |                                        | ^ | & | * | ( | ) | BKSP |
+// | &mt LALT LSHIFT &kp N | ! | @ | # | $ | % |                                        | ^ | & | * | ( | ) | BKSP |
 // | Vol_up | Vol_dn | PP | next | prev | PSCRN |                   | - | = | [ | ] | \ | ` |
 // | rgb_up | rgb_dn | rgb_hui | rgb_hud | rgb_eff | rgb_spd |      | _ | + | { | } | "|" | ~ |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
