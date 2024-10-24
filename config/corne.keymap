@@ -20,7 +20,8 @@
     macros {
         open_terminal: open_terminal {
             compatible = "zmk,behavior-macro";
-            wait-ms = <40>; // Establece un tiempo global de espera entre pulsaciones
+            #binding-cells = <0>; // Agrega esto para cumplir con los requisitos
+            wait-ms = <40>; // Tiempo de espera entre pulsaciones
             bindings
                 = <&macro_press &kp LGUI>   // Presiona la tecla Windows/GUI
                 , <&macro_wait_time 50>     // Espera antes de la siguiente pulsación
