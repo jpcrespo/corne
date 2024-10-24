@@ -20,27 +20,12 @@
     macros {
         open_terminal: open_terminal {
             compatible = "zmk,behavior-macro";
-            #binding-cells = <0>; // Agrega esto para cumplir con los requisitos
-            wait-ms = <40>; // Tiempo de espera entre pulsaciones
+            #binding-cells = <0>; // Indicamos que no tiene parámetros adicionales
+            wait-ms = <80>; // Tiempo de espera entre pulsaciones, puedes ajustar este valor si es necesario
             bindings
-                = <&macro_press &kp LGUI>   // Presiona la tecla Windows/GUI
-                , <&macro_wait_time 50>     // Espera antes de la siguiente pulsación
-                , <&macro_tap &kp T>        // Escribe "T"
-                , <&macro_wait_time 50>     // Espera 50ms
-                , <&macro_tap &kp E>        // Escribe "E"
-                , <&macro_wait_time 50>
-                , <&macro_tap &kp R>        // Escribe "R"
-                , <&macro_wait_time 50>
-                , <&macro_tap &kp M>        // Escribe "M"
-                , <&macro_wait_time 50>
-                , <&macro_tap &kp I>        // Escribe "I"
-                , <&macro_wait_time 50>
-                , <&macro_tap &kp N>        // Escribe "N"
-                , <&macro_wait_time 50>
-                , <&macro_tap &kp A>        // Escribe "A"
-                , <&macro_wait_time 50>
-                , <&macro_tap &kp L>        // Escribe "L"
-                , <&macro_wait_time 100>    // Espera antes de presionar Enter
+                = <&macro_tap &kp LGUI>   // Presiona la tecla Windows/GUI
+                , <&macro_release &kp LGUI>
+                , <&macro_tap &kp T &kp E &kp R &kp M &kp I &kp N &kp A &kp L> // Escribe "TERMINAL"
                 , <&macro_tap &kp RET>;     // Presiona Enter
         };
     };
