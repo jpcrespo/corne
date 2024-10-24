@@ -70,7 +70,7 @@
 // | rgb_up | rgb_dn | rgb_hui | rgb_hud | rgb_eff | rgb_spd |      | _ | + | { | } | "|" | ~ |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                     bindings = <
-    &kp  TILDE  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &kp PRCNT
+    &open_terminal &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &kp PRCNT
     &kp C_VOL_UP &kp C_VOL_DN &kp C_PP &kp C_NEXT &kp C_PREV &kp C_MUTE &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH &kp GRAVE
     &rgb_ug RGB_BRI &rgb_ug  RGB_BRD  &rgb_ug  RGB_HUI &rgb_ug  RGB_HUD  &rgb_ug RGB_EFF  &rgb_ug RGB_SPD   &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &kp TILDE
                           &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
