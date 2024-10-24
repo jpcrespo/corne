@@ -24,7 +24,6 @@
             wait-ms = <80>; // Tiempo de espera entre pulsaciones, puedes ajustar este valor si es necesario
             bindings
                 = <&macro_tap &kp LGUI>   // Presiona la tecla Windows/GUI
-                , <&macro_release &kp LGUI>
                 , <&macro_tap &kp T &kp E &kp R &kp M &kp I &kp N &kp A &kp L> // Escribe "TERMINAL"
                 , <&macro_tap &kp RET>;     // Presiona Enter
         };
