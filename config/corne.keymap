@@ -86,7 +86,7 @@ macros {
             bindings
                 = <&macro_press &kp LGUI>   // Presiona la tecla Windows/GUI
                 , <&macro_tap &kp L>
-                ,<&macro_release>;     // Presiona la tecla L
+                , <&macro_release &kp LGUI>;     // Presiona la tecla L
         };
 
 
