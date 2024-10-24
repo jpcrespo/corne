@@ -76,8 +76,19 @@ macros {
             bindings
                 = <&macro_press &kp LGUI>;
                 , <&macro_tap &kp LSHFT &kp S>
-                , <&macro_release &kp LGUI>
+                , <&macro_release &kp LGUI>;
         };
+
+   lock_screen: lock_screen {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>; // No se requieren parámetros adicionales
+            wait-ms = <40>; // Tiempo de espera entre pulsaciones, ajustable si es necesario
+            bindings
+                = <&macro_press &kp LGUI>   // Presiona la tecla Windows/GUI
+                , <&macro_tap &kp L>
+                ,<&macro_release>;     // Presiona la tecla L
+        };
+
     };
 };
 
