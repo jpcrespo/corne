@@ -16,7 +16,7 @@
 
 
 
-&macro {
+macros {
     open_terminal: open_terminal {
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>; // No se requieren parámetros adicionales
