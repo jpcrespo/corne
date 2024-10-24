@@ -15,7 +15,7 @@
 };
 
 
-
+/ {
 macros {
     open_terminal: open_terminal {
         compatible = "zmk,behavior-macro";
@@ -27,6 +27,7 @@ macros {
             , <&macro_wait_time 100>  // Espera antes de presionar Enter
             , <&macro_tap &kp RET>;   // Presiona Enter
     };
+   };
 };
 
 
