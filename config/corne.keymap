@@ -14,6 +14,24 @@
     // 21 backlight + 6 glowlight
 };
 
+
+
+/ {
+    macros {
+        open_terminal: open_terminal {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI>  // Presiona la tecla GUI (Windows)
+                , <&macro_tap &kp T &kp E &kp R &kp M &kp I &kp N &kp A &kp L>  // Escribe "TERMINAL"
+                , <&macro_tap &kp RET>;  // Presiona Enter
+        };
+    };
+};
+
+
+
+
 / {
         keymap {
                 compatible = "zmk,keymap";
