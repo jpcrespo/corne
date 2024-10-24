@@ -52,7 +52,7 @@
 // | rgb_up | rgb_dn | rgb_hui | rgb_hud | rgb_eff | rgb_spd |      | _ | + | { | } | "|" | ~ |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                     bindings = <
-    &macro_press &kp LGUI &kp T &kp E &kp R &kp M &kp I &kp N &kp A &kp L &kp RET
+    &macro_press &kp LGUI &kp T &macro_wait 50 &kp E &macro_wait 50 &kp R &macro_wait 50 &kp M &macro_wait 50 &kp I &macro_wait 50 &kp N &macro_wait 50 &kp A &macro_wait 50 &kp L &macro_wait 50 &kp RET
     &macro_press &kp LGUI &kp O &kp B &kp S &kp I &kp D &kp I &kp A &kp N &kp RET
     &macro_press &kp LGUI &kp T &kp E &kp L &kp E &kp G &kp R &kp A &kp M &kp RET
     &macro_press &kp LGUI &kp G &kp I &kp T &kp RET
