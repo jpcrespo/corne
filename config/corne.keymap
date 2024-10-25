@@ -155,7 +155,7 @@ tor: tor {
 // | rgb_up | rgb_dn | rgb_hui | rgb_hud | rgb_eff | rgb_spd |      | _ | + | { | } | "|" | ~ |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                     bindings = <
-    &open_terminal &open_brave &open_telegram &open_spot &open_git &kp PRCNT   &lock_screen &tor &trans &trans &trans &obsidian
+    &open_terminal &open_brave &open_telegram &open_spot &open_git &kp PRCNT   &lock_screen &screenshot &trans &trans &trans &obsidian
     &kp C_VOL_UP &kp C_VOL_DN &kp C_PP &kp C_NEXT &kp C_PREV &kp C_MUTE &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH &kp GRAVE
     &rgb_ug RGB_BRI &rgb_ug  RGB_BRD  &rgb_ug  RGB_HUI &rgb_ug  RGB_HUD  &rgb_ug RGB_EFF  &rgb_ug RGB_SPD   &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &kp TILDE
                           &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
