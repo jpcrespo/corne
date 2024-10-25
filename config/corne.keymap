@@ -75,8 +75,10 @@ macros {
             wait-ms = <40>; 
             bindings
                 = <&macro_press &kp LGUI>
-                , <&macro_tap &kp LSHFT &kp S>
-                , <&macro_release &kp LGUI>;
+                , <&macro_press &kp LSHIFT>
+                , <&macro_tap &kp S>
+                , <&macro_release &kp LGUI>
+                , <&macro_release &kp LSHIFT>;
         };
 
    lock_screen: lock_screen {
@@ -163,3 +165,6 @@ tor: tor {
                 };
         };
 };
+
+
+aaaú
