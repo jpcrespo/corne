@@ -20,59 +20,59 @@ macros {
     open_terminal: open_terminal {
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>; // No se requieren parámetros adicionales
-        wait-ms = <40>; // Tiempo de espera entre pulsaciones, ajustable si es necesario
+        wait-ms = <10>; // Tiempo de espera entre pulsaciones, ajustable si es necesario
         bindings
             = <&macro_tap &kp LGUI>   // Presiona la tecla Windows/GUI
             , <&macro_tap &kp T &kp E &kp R &kp M &kp I &kp N &kp A &kp L> // Escribe "TERMINAL"
-            , <&macro_wait_time 50>  // Espera antes de presionar Enter
+            , <&macro_wait_time 10>  // Espera antes de presionar Enter
             , <&macro_tap &kp RET>;   // Presiona Enter
     };
 
    open_brave: open_brave {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>; 
-            wait-ms = <40>; 
+            wait-ms = <10>; 
             bindings
                 = <&macro_tap &kp LGUI>   
                 , <&macro_tap &kp B &kp R &kp A &kp V &kp E> // Escribe "BRAVE"
-                , <&macro_wait_time 50>  
+                , <&macro_wait_time 10>  
                 , <&macro_tap &kp RET>;   
    };
    open_telegram: open_telegram {
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>; 
-        wait-ms = <40>; 
+        wait-ms = <10>; 
         bindings
            = <&macro_tap &kp LGUI>   
            , <&macro_tap &kp T &kp E &kp L &kp E &kp G &kp R &kp A &kp M> // Escribe "TELEGRAM"
-           , <&macro_wait_time 50>  
+           , <&macro_wait_time 10>  
            , <&macro_tap &kp RET>;   
    };
 
    open_git: open_git {
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>; 
-        wait-ms = <40>; 
+        wait-ms = <10>; 
         bindings
            = <&macro_tap &kp LGUI>   
            , <&macro_tap &kp G &kp I &kp T> // Escribe "GIT"
-           , <&macro_wait_time 50>  
+           , <&macro_wait_time 10>  
            , <&macro_tap &kp RET>;   
    };
    open_spot: open_spot {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>; 
-            wait-ms = <40>; 
+            wait-ms = <10>; 
             bindings
                 = <&macro_tap &kp LGUI>   
                 , <&macro_tap &kp S &kp P &kp O &kp T> 
-                , <&macro_wait_time 50>  
+                , <&macro_wait_time 10>  
                 , <&macro_tap &kp RET>;   
    };
    screenshot: screenshot {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>; 
-            wait-ms = <40>; 
+            wait-ms = <10>; 
             bindings
                 = <&macro_press &kp LGUI>
                 , <&macro_press &kp LSHIFT>
@@ -84,7 +84,7 @@ macros {
    lock_screen: lock_screen {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>; // No se requieren parámetros adicionales
-            wait-ms = <40>; // Tiempo de espera entre pulsaciones, ajustable si es necesario
+            wait-ms = <10>; // Tiempo de espera entre pulsaciones, ajustable si es necesario
             bindings
                 = <&macro_press &kp LGUI>   // Presiona la tecla Windows/GUI
                 , <&macro_tap &kp L>
@@ -95,7 +95,7 @@ macros {
 tor: tor {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>; // No se requieren parámetros adicionales
-    wait-ms = <40>; // Tiempo de espera entre pulsaciones, ajustable si es necesario
+    wait-ms = <10>; // Tiempo de espera entre pulsaciones, ajustable si es necesario
     bindings
         = <&macro_press &kp LALT>  // Presiona la tecla Alt izquierda
         , <&macro_press &kp LSHFT> // Presiona la tecla Shift izquierda
@@ -107,11 +107,11 @@ tor: tor {
    obsidian: obsidian {
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>; 
-        wait-ms = <40>; 
+        wait-ms = <10>; 
         bindings
            = <&macro_tap &kp LGUI>   
            , <&macro_tap &kp O &kp B &kp S> // Escribe "GIT"
-           , <&macro_wait_time 50>  
+           , <&macro_wait_time 10>  
            , <&macro_tap &kp RET>;   
    };
 
@@ -131,8 +131,8 @@ tor: tor {
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
 &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-&kp LSHFT &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-&kp LCTRL &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
+&kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+&kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
                &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
                         >;
                 };
@@ -143,10 +143,10 @@ tor: tor {
 // | SHFT | BT1 | BT2 | BT3 | BT4 | BT_CLR |     | LFT | DWN | UP | RGT | < | > |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-    &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
-    &kp GRAVE &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp EQUAL
+    &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &DEL
+    &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6   &kp N7 &kp N8 &kp N9 &kp N0 &kp MINUS &kp EQUAL
     &kp LSHFT &bt BT_SEL 0&bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR   &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp LT &kp GT
-               &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp LALT
+               &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
                         >;
                 };
 
@@ -157,7 +157,7 @@ tor: tor {
 // | rgb_up | rgb_dn | rgb_hui | rgb_hud | rgb_eff | rgb_spd |      | _ | + | { | } | "|" | ~ |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                     bindings = <
-    &open_terminal &open_brave &open_telegram &open_spot &open_git &kp PRCNT   &lock_screen &screenshot &obsidian &trans &tor &kp DEL
+    &open_terminal &open_brave &open_telegram &open_spot &open_git &kp PRCNT   &lock_screen &screenshot &obsidian &trans &trans &tor
     &kp C_VOL_UP &kp C_VOL_DN &kp C_PP &kp C_NEXT &kp C_PREV &kp C_MUTE &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH &kp GRAVE
     &rgb_ug RGB_BRI &rgb_ug  RGB_BRD  &rgb_ug  RGB_HUI &rgb_ug  RGB_HUD  &rgb_ug RGB_EFF  &rgb_ug RGB_SPD   &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &kp TILDE
                           &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
