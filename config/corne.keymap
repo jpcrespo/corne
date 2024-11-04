@@ -14,6 +14,8 @@
     // 21 backlight + 6 glowlight
 };
 
+oled_brightness = 128; // Ajusta el brillo a un nivel medio
+
 
 / {
 macros {
