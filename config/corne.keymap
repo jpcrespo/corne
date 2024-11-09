@@ -159,7 +159,7 @@ tor: tor {
                     bindings = <
     &open_terminal &open_brave &open_telegram &open_spot &open_git &kp PRCNT   &lock_screen &screenshot &obsidian &tor &kp PGDN &kp PGUP
     &kp C_VOL_DN &kp C_VOL_UP &kp C_PP &kp C_PREV &kp C_NEXT &kp C_MUTE &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH &kp GRAVE
-    &rgb_ug RGB_BRI &rgb_ug  RGB_BRD  &rgb_ug  RGB_HUI &rgb_ug  RGB_HUD  &rgb_ug RGB_EFF  &rgb_ug RGB_SPD   &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &kp TILDE
+    &rgb_ug RGB_BRD &rgb_ug  RGB_BRI  &rgb_ug  RGB_HUI &rgb_ug  RGB_HUD  &rgb_ug RGB_EFF  &rgb_ug RGB_SPD   &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &kp TILDE
                           &kp C_BRI_DN &trans   &kp SPACE   &kp RET   &trans    &kp C_BRI_UP
                         >;
                 };
