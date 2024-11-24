@@ -152,7 +152,7 @@ tor: tor {
 
 
                         bindings = <
-    &kp ESC   &kp N7 &kp N8 &kp N9 &rgb_ug RGB_BRD &rgb_ug RGB_BRI      &kp F1     &kp F2       &kp F3       &kp F5        &kp F11 &kp BSPC
+    &kp ESC   &kp N7 &kp N8 &kp N9 &rgb_ug RGB_BRD &rgb_ug RGB_BRI      &kp F1     &kp F2       &kp F3       &kp F4        &kp F5 &kp F11
     &kp TAB   &kp N4 &kp N5 &kp N6 &kp C_BRI_DN    &kp C_BRI_UP         &kp LEFT   &kp DOWN     &kp UP       &kp RIGHT     &kp PGDN &kp PGUP
     &kp LSHFT &kp N1 &kp N2 &kp N3 &kp C_VOL_DN    &kp C_VOL_UP         &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2  &kp C_PREV &kp C_NEXT
                                      &kp N0 &trans &kp C_PP             &kp C_MUTE &trans &kp LALT
@@ -170,7 +170,7 @@ tor: tor {
                     bindings = <
     &kp GRAVE       &kp N1           &kp N2          &kp N3          &kp N4          &kp N5               &kp N6     &kp N7    &kp N8    &kp N9    &kp N0 &kp BSPC
     &open_terminal  &open_brave      &open_telegram  &obsidian       &screenshot     &lock_screen         &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH &kp GRAVE
-    &kp LSHFT       &rgb_ug RGB_HUI &rgb_ug RGB_SAI  &rgb_ug RGB_EFF &rgb_ug RGB_SPD &rgb_ug RGB_TOG      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &kp TILDE
+    &kp LSHFT       &rgb_ug RGB_HUI &rgb_ug RGB_SAI  &rgb_ug RGB_EFF &rgb_ug RGB_SPI &rgb_ug RGB_SPD      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &kp TILDE
                                                                        &trans &trans &kp SPACE            &kp RET &trans &kp RALT
                         >;
                 };
