@@ -129,6 +129,9 @@ tor: tor {
 // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+
+
+
                         bindings = <
 &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
 &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
@@ -137,30 +140,38 @@ tor: tor {
                         >;
                 };
                 lower_layer {
+
+
+
 // -----------------------------------------------------------------------------------------
-// | F1 | F2 | F3 | F4 | F5 | F6 |               | F7 | F8 | F9 | F10 | F11 | F12 |
-// | ` | 1 | 2 | 3 | 4 | 5 |                     | 6 | 7 | 8 | 9 | 0 | = |
-// | SHFT | BT1 | BT2 | BT3 | BT4 | BT_CLR |      LFT | DWN | UP | RGT | < | > |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+// | ESC  | 7 | 8 | 9 | BrilloT- | BrilloT+ |           | F1 | F2 | F3 | F4 | F5 | F11 |
+// | TAB  | 4 | 5 | 6 | BrilloP- | BrilloP+ |           | LFT | DWN | UP | RGT | PGDN | PGUP |
+// | SHFT | 1 | 2 | 3 | Vol+ | Vol- |                   | BT_CLR | BT1 | BT2 | BT3 | prev | next |
+//                    | 0 |     | SPC |   | ENT |     | ALT |
+
+
+
                         bindings = <
-    &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp BSPC
-    &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6   &kp N7 &kp N8 &kp N9 &kp N0 &kp MINUS &kp EQUAL
-    &kp LSHFT &bt BT_SEL 0&bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR   &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp LT &kp GT
-               &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp LALT
+    &kp ESC   &kp N7 &kp N8 &kp N9 &rgb_ug RGB_BRD &rgb_ug RGB_BRI      &kp F1     &kp F2       &kp F3       &kp F5        &kp F11 &kp BSPC
+    &kp TAB   &kp N4 &kp N5 &kp N6 &kp C_BRI_DN    &kp C_BRI_UP         &kp LEFT   &kp DOWN     &kp UP       &kp RIGHT     &kp PGDN &kp PGUP
+    &kp LSHFT &kp N1 &kp N2 &kp N3 &kp C_VOL_DN    &kp C_VOL_UP         &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2  &kp C_PREV &kp C_NEXT
+                                     &kp N0 &trans &kp C_PP             &kp C_MUTE &trans &kp LALT
                         >;
                 };
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// | ~ | ! | @ | # | $ | % |                                        | ^ | & | * | ( | ) | BKSP |
-// | Vol_up | Vol_dn | PP | next | prev | PSCRN |                   | - | = | [ | ] | \ | ` |
+// | ` | 1 | 2 | 3 | 4 | 5 |                                        | 6 | 7 | 8 | 9 | 0 | DEL |
+// | terminal | brave | telegram | obsidian | ss | ls |             | - | = | [ | ] | \ | ` |
 // | rgb_up | rgb_dn | rgb_hui | rgb_hud | rgb_eff | rgb_spd |      | _ | + | { | } | "|" | ~ |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+//                    | SHFT |     | SPC |   | ENT |     | ALT |
+
+
                     bindings = <
-    &open_terminal &open_brave &open_telegram &open_spot &open_git &screenshot   &lock_screen &obsidian &tor &kp PGDN &kp PGUP &kp DEL
-    &kp C_VOL_DN &kp C_VOL_UP &kp C_PP &kp C_PREV &kp C_NEXT &kp C_MUTE &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH &kp GRAVE
-    &rgb_ug RGB_BRD &rgb_ug  RGB_BRI  &rgb_ug  RGB_HUI &rgb_ug  RGB_HUD  &rgb_ug RGB_EFF  &rgb_ug RGB_SPD   &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &kp TILDE
-                          &kp C_BRI_DN &trans   &kp SPACE   &kp RET   &trans    &kp C_BRI_UP
+    &kp GRAVE       &kp N1           &kp N2          &kp N3          &kp N4          &kp N5               &kp N6     &kp N7    &kp N8    &kp N9    &kp N0 &kp BSPC
+    &open_terminal  &open_brave      &open_telegram  &obsidian       &screenshot     &lock_screen         &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH &kp GRAVE
+    &kp LSHFT       &rgb_ug RGB_HUI &rgb_ug RGB_SAI  &rgb_ug RGB_EFF &rgb_ug RGB_SPD &rgb_ug RGB_TOG      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &kp TILDE
+                                                                       &trans &trans &kp SPACE            &kp RET &trans &kp RALT
                         >;
                 };
         };
