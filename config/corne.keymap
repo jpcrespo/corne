@@ -50,26 +50,6 @@ macros {
            , <&macro_tap &kp RET>;   
    };
 
-   open_git: open_git {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>; 
-        wait-ms = <10>; 
-        bindings
-           = <&macro_tap &kp LGUI>   
-           , <&macro_tap &kp G &kp I &kp T> // Escribe "GIT"
-           , <&macro_wait_time 10>  
-           , <&macro_tap &kp RET>;   
-   };
-   open_spot: open_spot {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>; 
-            wait-ms = <10>; 
-            bindings
-                = <&macro_tap &kp LGUI>   
-                , <&macro_tap &kp S &kp P &kp O &kp T> 
-                , <&macro_wait_time 10>  
-                , <&macro_tap &kp RET>;   
-   };
    screenshot: screenshot {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>; 
@@ -91,19 +71,6 @@ macros {
                 , <&macro_tap &kp L>
                 , <&macro_release &kp LGUI>;     // Presiona la tecla L
         };
-
-
-tor: tor {
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>; // No se requieren parámetros adicionales
-    wait-ms = <10>; // Tiempo de espera entre pulsaciones, ajustable si es necesario
-    bindings
-        = <&macro_press &kp LALT>  // Presiona la tecla Alt izquierda
-        , <&macro_press &kp LSHFT> // Presiona la tecla Shift izquierda
-        , <&macro_tap &kp N>       // Presiona la tecla N
-        , <&macro_release &kp LSHFT> // Libera Shift
-        , <&macro_release &kp LALT>;  // Libera Alt
-};
 
    obsidian: obsidian {
         compatible = "zmk,behavior-macro";
@@ -146,8 +113,8 @@ tor: tor {
 // -----------------------------------------------------------------------------------------
 // | ESC  | 7 | 8 | 9 | BrilloT- | BrilloT+ |           | F1 | F2 | F3 | F4 | F5 | F11 |
 // | TAB  | 4 | 5 | 6 | BrilloP- | BrilloP+ |           | LFT | DWN | UP | RGT | PGDN | PGUP |
-// | SHFT | 1 | 2 | 3 | Vol+ | Vol- |                   | BT_CLR | BT1 | BT2 | BT3 | prev | next |
-//                    | 0 |     | SPC |   | ENT |     | ALT |
+// | SHFT | 1 | 2 | 3 | Vol+     | Vol-     |           | BT_CLR | BT1 | BT2 | BT3 | prev | next |
+//                          | 0 |     | SPC |           | ENT |     | ALT |
 
 
 
@@ -162,9 +129,9 @@ tor: tor {
                 raise_layer {
 // -----------------------------------------------------------------------------------------
 // | ` | 1 | 2 | 3 | 4 | 5 |                                        | 6 | 7 | 8 | 9 | 0 | DEL |
-// | terminal | brave | telegram | obsidian | ss | ls |             | - | = | [ | ] | \ | ` |
-// | rgb_up | rgb_dn | rgb_hui | rgb_hud | rgb_eff | rgb_spd |      | _ | + | { | } | "|" | ~ |
-//                    | SHFT |     | SPC |   | ENT |     | ALT |
+// | terminal | brave | telegram | obsidian | ss      | ls      |   | - | = | [ | ] | \ | ` |
+// | rgb_up | rgb_dn | rgb_hui | rgb_hud    | rgb_eff | rgb_spd |   | _ | + | { | } | "|" | ~ |
+//                                        | SHFT |    | SPC     |   | ENT |     | ALT |
 
 
                     bindings = <
