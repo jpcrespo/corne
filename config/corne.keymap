@@ -111,17 +111,17 @@ macros {
 
 
 // -----------------------------------------------------------------------------------------
-// | ESC  | 7 | 8 | 9 | BrilloT- | BrilloT+ |           | F1 | F2 | F3 | F4 | F5 | F11 |
-// | TAB  | 4 | 5 | 6 | BrilloP- | BrilloP+ |           | LFT | DWN | UP | RGT | PGDN | PGUP |
-// | SHFT | 1 | 2 | 3 | Vol+     | Vol-     |           | BT_CLR | BT1 | BT2 | BT3 | prev | next |
+// | TAB  | 7 | 8 | 9 | BrilloT- | BrilloT+ |           | F1 | F2 | F3 | F4 | F5 | F11 |
+// | CTRL  | 4 | 5 | 6 | BrilloP- | BrilloP+ |           | LFT | DWN | UP | RGT | PGDN | PGUP |
+// | SHFT | 1 | 2 | 3 | Vol+     | Vol-     |           | BT_CLR | BT1 | BT2 | prev | next | ESC |
 //                          | 0 |     | SPC |           | ENT |     | ALT |
 
 
 
                         bindings = <
-    &kp ESC   &kp N7 &kp N8 &kp N9 &rgb_ug RGB_BRD &rgb_ug RGB_BRI      &kp F1     &kp F2       &kp F3       &kp F4        &kp F5 &kp F11
-    &kp TAB   &kp N4 &kp N5 &kp N6 &kp C_BRI_DN    &kp C_BRI_UP         &kp LEFT   &kp DOWN     &kp UP       &kp RIGHT     &kp PGDN &kp PGUP
-    &kp LSHFT &kp N1 &kp N2 &kp N3 &kp C_VOL_DN    &kp C_VOL_UP         &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2  &kp C_PREV &kp C_NEXT
+    &kp TAB   &kp N7 &kp N8 &kp N9 &rgb_ug RGB_BRD &rgb_ug RGB_BRI      &kp F1     &kp F2       &kp F3       &kp F4        &kp F5     &kp F11
+    &kp CTRL  &kp N4 &kp N5 &kp N6 &kp C_BRI_DN    &kp C_BRI_UP         &kp LEFT   &kp DOWN     &kp UP       &kp RIGHT     &kp PGDN   &kp PGUP
+    &kp LSHFT &kp N1 &kp N2 &kp N3 &kp C_VOL_DN    &kp C_VOL_UP         &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &kp C_PREV    &kp C_NEXT &KP ESC
                                      &kp N0 &trans &kp C_PP             &kp C_MUTE &trans &kp LALT
                         >;
                 };
