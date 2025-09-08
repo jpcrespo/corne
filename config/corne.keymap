@@ -22,7 +22,7 @@
     combo_bt_clear {
       timeout-ms = <20>;                 // ventana para pulsar ambos (ajusta 20–50 ms según comodidad)
       layers = <1>;                      // activo solo en la capa 1 (lower_layer)
-      key-positions = <33 34>;           // posiciones de C_PREV y C_NEXT
+      key-positions = <30 31>;           // posiciones de C_PREV y C_NEXT
       bindings = <&bt BT_CLR>;           // acción: borrar emparejamientos BLE
     };
   };
@@ -151,3 +151,4 @@ macros {
                 };
         };
 };
+
