@@ -28,10 +28,10 @@
 
         /* SPI */
         reg = <0>; /* ignored, but necessary for SPI bindings */
-        spi-max-frequency = <4000000>;
+        spi-max-frequency = <2000000>;
 
         /* WS2812 */
-        chain-length = <21>; /* arbitrary; change at will */
+        chain-length = <27>; /* arbitrary; change at will */
         spi-one-frame = <0x70>;
         spi-zero-frame = <0x40>;
 
